@@ -1,0 +1,573 @@
+
+/*
+  COMIENZO EL TRABAJO CON VISTA PARA DISPOSITIVOS MÓVILES HASTA 720PX. LUEGO CONTINÚO CON PANTALLAS GRANDES
+*/
+
+/*FUENTE IMPORTADA DE GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+/* SACO LOS BORDES POR DEFECTO  */
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* SCROLL DE PAGINA LENTO */
+  html{
+    scroll-behavior: smooth;
+  }
+
+  /* DEFINO TAMAÑO DE FUENTES*/
+  h1{ font-size: 3em;  }
+  h2{ font-size: 2em;}
+  h3{ font-size: 1.5em;}
+  p { font-size: 1.05em;}
+  ul{ text-decoration: none;}
+  li{ list-style: none;}
+  li{ font-size: 1..1em;}
+  span{ font-size: 1.1em;}
+  
+ #cv{ font-weight: bold; }
+
+
+  #divisor{
+    width: 60%;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  main hr{
+    text-align: center;
+    align-items: center;
+  }
+
+/* OCULTO LAS REDES SOCIALES PARA PANTALLAS MOVILES PARA MOSTRARLAS EN PANTALLAS GRANDES */
+  #logos{
+    display: none;
+  }
+
+body{
+  background: rgba(29, 28, 28, 0.5);
+  font-family: 'Roboto', sans-serif;
+  color:rgb(10,10,10);
+  margin:0;
+}
+
+/* CONTENEDOR PARA PANTALLAS MUY GRANDES*/
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+header{
+  background: rgb(10,10,10);
+  width: 100%;
+
+}
+
+header .container{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+header nav{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+header a{
+  text-decoration: none;
+  padding: 20px;
+  color:rgb(255,255,255);
+  background: rgb(10,10,10);
+  width: 90vh;
+}
+
+header a:hover{
+  background: #FF5500;
+  color:rgb(255,255,255);
+}
+
+#bienvenida{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  color:rgb(255,255,255);
+  /* OSCURESCO IMAGEN PARA QUE SOBRESALFA EL TEXTO Y LA CENTRO */
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+   url("../Files/seo-web-development-software-coding-and-programming-on-application-in-laptop-computer-devices-with-script-language-testing-and-graphical-icons-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.main{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column; 
+  padding: 0;
+  padding-bottom: 0;
+}
+
+/* FOTO DE PERFIL */ 
+#perfil {
+  width: 250px;
+  height: 250px;
+  background-image: url("../Files/foto_perfil.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 100%;
+  box-shadow: 3px 3px 10px rgb(100,100,100);
+  border: 1px solid;
+  }
+
+/* BLOQUE DE DATOS PERSONALES*/ 
+.datos_pers{
+  padding: 20px;
+  background: rgb(250,250,250);
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.datos_pers .container{
+  padding: 20px;
+}
+
+.datos_pers h2{
+  text-align: center;  
+}
+
+#datos_lab{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(20,20,20);
+  color: rgb(255,255,255);
+}
+
+#mas_info{
+  text-align: center;
+  padding: 10px;
+}
+
+.estudios{
+  width: 100%;
+  background: rgb(245,245,245);
+  padding-bottom: 10px;
+}
+
+/* ESTILOS DE BOTONES INFERIORES*/
+button{
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: rgb(136, 41, 224);
+}
+
+button:hover {
+  background: rgb(101, 41, 157);
+}
+/* FIN ESTILO BOTON */
+
+
+header #iconos{
+  border:10px;
+}
+
+
+h3{
+  margin-top: 10;
+  margin-bottom: 0;
+}
+
+h4{
+  margin-top:5px;
+}
+
+hr{
+  margin:20px;
+}
+
+
+#conocimientos{
+  width: 100%;
+  padding: 10px;
+  background: rgb(10,10,10);
+  color: rgb(255,255,255);
+}
+
+#conocimientos .divisor{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+
+#conocimientos h3{
+  margin:0%
+}
+
+.barra{
+  padding-left: 20px;
+width: 40vh;
+
+}
+
+/* IMAGENES HABILIDADES */
+#img-php{
+  background-image: url("../Files/phplogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+#img-python{
+  background-image: url("../Files/python.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+#img-net{
+  background-image: url("../Files/netlogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+}
+
+#img-mysql{
+  background-image: url("../Files/mysql-logo-png-transparent.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 120px;
+  height: 100px;
+}
+
+#img-sqlserver{
+  background-image: url("../Files/sqlserver.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+}
+
+#img-htmlcss{
+  background-image: url("../Files/htmlcss2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+}
+
+
+
+
+
+/* BARRAS DE PROGRESO*/
+
+
+.progress{
+  height: 30px;
+  width: 100%;
+  border: 1px solid #428bca;
+  border-radius: 10px;
+  background-color: #e6f3fa;
+  padding: 2px;
+}
+
+.progress-bar{
+  height: 100%;
+  background: #428bca;
+  transition: width 0.25s;
+  border-radius: 10px;
+}
+
+.progress-bar-text{
+  padding-left: 10px;
+  font-weight: bold;
+  color: #cce7f5
+}
+/* FIN ESTILO BARRAS*/
+
+
+
+footer .container{
+  height: 10vh;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+}
+
+footer{
+  background: rgb(210,210,210);
+}
+
+footer p{
+  margin: 0;
+  padding: 12px;
+  color: rgb(100,100,100);
+}
+
+/* ESTILO FORMULARIO DESPLEGABLE */
+.form_container{
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.form{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+
+}
+
+.form--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+
+}
+
+.form_title{
+  font-size: 2rem;
+  margin-bottom: 0px;   
+  color: #5757577e;
+}
+
+
+.form_container{
+  margin: auto;
+  background: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 0em 2em;
+  padding-bottom: 1em;
+  border-radius: 10px;
+  display: grid;
+  gap: 2.2em;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.form_group{
+  position: relative;
+  --color:#5757577e;
+}
+
+.form_input{
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+
+.form_label{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY (10px);
+  transition: transform .5s, color .3s;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: #3866f2
+}
+
+.form_submit{
+  color: #fff;
+  background-color: #3866f2;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: .8em 0;
+  border:none;
+  border-radius: .5em;
+}
+
+
+.form_line{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown)~.form_line{
+  transform:scale(1)
+}
+
+.form a{
+  text-decoration: none;
+}
+/* FIN FORMULARIO DESPLEGABLE */
+
+@media (min-width: 720px){
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+ }
+ nav a{
+  height:20%;
+  font-size: 15px;
+  padding: 10%;
+ }
+
+ #logos a:hover{
+  background: rgb(22, 43, 238);
+  color:white;
+  padding-top: 30px;
+}
+
+ header nav{
+  width: 10%;
+  flex-direction: row;
+  font-size: 14px;
+ }
+
+#iconos{
+  flex-direction: row;
+  align-items: right;
+  width: 100%;
+  padding: 5px;
+ }
+
+ #logos{
+  display: block;
+  font-size: 1.5vw;
+ }
+
+ #whatsapp {
+	width: 6vh;
+	height: 6vh;
+	background-image: url("../Files/whatsapp_logo.png");
+	background-repeat: no-repeat;
+  background-size:cover;
+	}
+
+#facebook {
+  width: 6vh;
+  height: 6vh;
+  background-image: url("../Files/facebook_logo.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+
+#instagram {
+  width: 6vh;
+  height: 6vh;
+  background-image: url("../Files/linkedin_logo.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+
+#linkedin {
+  width: 6vh;
+  height: 6vh;
+  background-image: url("../Files/instagram_logo.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+
+
+#datos_pers #perfil{
+ display: block;
+ }
+
+  #datos_pers .container{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+ }
+
+ #about{
+  width:60vh;
+}
+
+ .datos_lab p{
+  display: block;
+ }
+
+ .estudios p{
+  display: block;
+ }
+
+ .texto{
+  text-align: left;
+ }
+
+} /* FIN MEDIA QUERY MIN 600PX*/
+
+@media (min-width:900px){
+
+  header a{
+    padding: 20%;
+  }
+}
+
