@@ -1,6 +1,7 @@
-
+/* GUARDO EL JSON EN LA VARIABLE DATOS */ 
 const datos = mostrarDatos();
 
+/* MUESTRO LOS DATOS DEL JSON */
 document.getElementById("nombre").innerHTML = datos['nombre'];
 document.getElementById("edad").innerHTML = datos['edad'];
 document.getElementById("ciudad").innerHTML = datos['ciudad'];
