@@ -33,7 +33,7 @@
   }
 
   h4{
-    margin-top:5px;
+    margin: top 15px;
   }
 
   hr{
@@ -41,6 +41,27 @@
   }
   
  #cv{ font-weight: bold; }
+
+ /* TAMAÑOS DE ICONOS */
+i{
+  padding: .7em;
+  font-size: 2.2em;
+ }
+
+ .titulo2 i{
+  padding-right: .5em;
+  font-size: 1.5em;
+ }
+
+ /* ALINEADOR DE ICONO CON TITULO DE DATOS PERSONALES */
+ .titulo, .titulo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+
 
 /* DEFINO EL ANCHO DEL SEPARADOR */
 #divisor{
@@ -55,10 +76,10 @@ main hr{
   align-items: center;
 }
 
-/* OCULTO LAS REDES SOCIALES PARA PANTALLAS MOVILES PARA MOSTRARLAS EN PANTALLAS GRANDES */
-  #logos{
-    display: none;
-  }
+/* OCULTO LAS REDES SOCIALES PARA PANTALLAS MOVILES Y MOSTRARLAS EN PANTALLAS GRANDES */
+#logos{
+  display: none;
+}
 
 body{
   background: rgba(29, 28, 28, 0.5);
@@ -111,9 +132,6 @@ header a:hover{
   color:rgb(255,255,255);
 }
 
-header #iconos{
-  border:10px;
-}
 
 #bienvenida{
   display: flex;
@@ -214,9 +232,6 @@ button:hover {
 /* FIN ESTILO BOTON */
 
 
-
-
-
 #conocimientos{
   width: 100%;
   padding: 10px;
@@ -224,15 +239,24 @@ button:hover {
   color: rgb(255,255,255);
 }
 
+#conocimientos .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
 /* DIVISOR DE HABILIDADES */
 #conocimientos .divisor{
   display: flex;
   flex-direction: row;
-  justify-content:center;
   padding: 15px;
   width: 100%;
   align-items: center;
 }
+
+
 
 /* BARRA SEPARADORA DE SECCIONES */
 .barra{
@@ -254,7 +278,7 @@ button:hover {
   background-image: url("../Files/python.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100px;
+  width: 120px;
   height: 100px;
 }
 
@@ -271,7 +295,7 @@ button:hover {
   background-image: url("../Files/mysql-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-size:contain;
-  width: 120px;
+  width: 100px;
   height: 100px;
 }
 
@@ -390,7 +414,7 @@ footer p{
   padding-bottom: 1em;
   border-radius: 10px;
   display: grid;
-  gap: 2.2em;
+  gap: 2em;
   transform: var(--transform); /* LLAMA A LAS VARIABLES DEL FORM PRINCIPAL */
   transition: var(--transition);
 }
@@ -464,23 +488,36 @@ footer p{
 .form a{
   text-decoration: none;
 }
+
+#iconomail{
+  font-size: 1em;
+}
 /* FIN FORMULARIO DESPLEGABLE */
 
-/* MEDIA QUERY PARA TAMAÑO MINIMO DE PANTALLA 720PX */
-@media (min-width: 720px){
+/* MEDIA QUERY PARA TAMAÑO MINIMO DE PANTALLA 770PX */
+@media (min-width: 770px){
 
+  /* PONGO HORIZONTAL LA BARRA VERTICAL DEL HEADER */
 header .container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
  }
+
+ header nav{
+  width: 10%;
+  flex-direction: row;
+  font-size: 14px;
+ }
+
  nav a{
   height:20%;
   font-size: 15px;
   padding: 10%;
  }
 
+
+ /* ICONOS DE REDES SOCIALES EN HEADER */
  #logos{
   display: block;
   font-size: 1.1vw;
@@ -492,12 +529,6 @@ header .container{
   padding-top: 30px;
 }
 
- header nav{
-  width: 10%;
-  flex-direction: row;
-  font-size: 14px;
- }
-
 #iconos{
   flex-direction: row;
   align-items: right;
@@ -506,62 +537,33 @@ header .container{
  }
 
 
+#img-iconow{
+width: 6.7vh;
+height: 6.7vh;
+}
 
- #whatsapp {
-	width: 6vh;
-	height: 6vh;
-	background-image: url("../Files/whatsapp_logo.png");
-	background-repeat: no-repeat;
-  background-size:cover;
-	}
-
-#facebook {
+#img-icono{
   width: 6vh;
   height: 6vh;
-  background-image: url("../Files/facebook_logo.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-
-#instagram {
-  width: 6vh;
-  height: 6vh;
-  background-image: url("../Files/linkedin_logo.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-
-#linkedin {
-  width: 6vh;
-  height: 6vh;
-  background-image: url("../Files/instagram_logo.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
+}
 
 
-#datos_pers #perfil{
- display: block;
- }
 
-  #datos_pers .container{
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
- }
+#datos_pers .container{
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+align-items: center;
+}
 
  #about{
   width:60vh;
 }
 
- .datos_lab p{
-  display: block;
- }
 
- .estudios p{
-  display: block;
- }
+ .columnas{
+  column-count: 2;
+}
 
  .texto{
   text-align: left;
@@ -569,11 +571,18 @@ header .container{
 
 } /* FIN MEDIA QUERY MIN 600PX*/
 
-/* MEDIA QUERY PARA TAMAÑO MINIMO DE PANTALLA 900PX */
-@media (min-width:900px){
+/* MEDIA QUERY PARA QUE NO SE ENCIMEN LOS BOTONES CON LOS ICONOS EN HEADER */
+@media (min-width:850px){
 
   header a{
     padding: 20%;
+  }
+}
+
+/* MEDIA QUERY PARA AGREGAR COLUMNAS EN ESTUDIOS */
+@media (min-width:1150px){
+  .columnas{
+    column-count: 3;
   }
 }
 

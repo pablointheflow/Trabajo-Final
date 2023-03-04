@@ -16,36 +16,41 @@
         <div id="header" class="container">
             <nav>
                 <a href="#header" id="opciones">Inicio</a>
-                <a href="#datos_pers" id="opciones">Acerca de mí</a>
+                <a href="#datos_pers" id="opciones">Acerca&nbsp;de&nbsp;mí</a>
                 <a href="#datos_lab" id="opciones">Experiencia</a>
                 <a href="#estudios" id="opciones">Estudios</a>
                 <a href="#conocimientos" id="opciones">Conocimientos</a>
                 <a href="#" class="contacto" id="opciones">Contacto</a>
             </nav>
             <div id="logos">
-                <a href="#" id="iconos"><img id="whatsapp"></a>
-                <a href="#" id="iconos"><img id="facebook"></a>
-                <a href="#" id="iconos"><img id="linkedin"></a>
-                <a href="#" id="iconos"><img id="instagram"></a>
+                <a href="#" id="iconos"><img id="img-iconow" src="../Files/whatsapp_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/facebook_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/linkedin_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/instagram_logo.png"></a>
             </div>
 
         </div>
     </header>
 
-    <section class="main">
-        <section id="bienvenida">
+    <section class="main"> <!-- SECCION PRINCIPAL -->
+
+        <section id="bienvenida"><!-- SECCION BIENVENIDA -->
             <div class="container">
                 <h1>Bienvenidos a mi<br><span id="cv">Curriculum Vitae</span></h1>
             </div>
         </section>
         
-        <section id="datos_pers" class="datos_pers">
+        <section id="datos_pers" class="datos_pers"> <!-- SECCION DATOS PERSONALES-->
 
             <div class="container">
-                <img id="perfil">
-                <div class="texto">
-                    <h2>Acerca de mí</h2>
-                    
+
+                <img id="perfil"> <!-- IMAGEN DE PERFIL -->
+
+                <div class="texto"><!-- SECCION DE TEXTO SEPARADOR DE IMAGEN -->
+                    <div class="titulo">
+                        <i class="fa-solid fa-user"></i><h2>Acerca de mí</h2>
+                    </div>
+
                     <div id="about">
                     <p>Mi nombre es <span id="nombre"></span>. Tengo <span id="edad"></span> años y vivo en la ciudad de <span id="ciudad"></span>. Recibido de la escuela "Roberto Arlt" en la
                         especialidad de Informática. <br>Cuento con mas de 8 años de experiencia en el área IT en empresas como soporte técnico
@@ -60,31 +65,46 @@
 
         <section id="datos_lab" class="datos_lab">
             <div class="container">
-                <h2>Experiencia Laboral</h2>
-                <h3>Vendedor de respuestos de Maquinas viales</h3>
+                <div class="titulo">
+                    <i class="fa-solid fa-briefcase"></i><h2>Experiencia Laboral</h2>
+                </div>
+                
+                <h2>Vendedor de respuestos de Maquinas viales</h2>
                 <h3>Venner S.A.</h3>
-                <h4>Desde <span>2016</span> hasta <span>2020</span></h4>
-                <p>Vendedor de repuestos de maquinarias viales. Atención telefónica y presencial. Despacho de repuestos
+
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde <span>2016</span> hasta <span>2020</span></h4>
+                </div>
+                    <p>Vendedor de repuestos de maquinarias viales. Atención telefónica y presencial. Despacho de repuestos
                     a todo el país. Publicaciones en redes sociales e Internet con Google Ads</p>
                 <hr id="divisor">
 
-                <h3>Soporte técnico Programador</h3>
+                <h2>Operador de eventos</h2>
+                <h3>SUBE - Banco Nación (Nación servicios)</h3>
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde <span>2014</span> hasta <span>2016</span></h4>
+                </div>
+                    <p>Gestión de eventos, incidentes y cambios. Monitoreo del sistema global de SUBE con software Nagios </p>
+                <hr id="divisor">
+
+                <h2>Soporte técnico Programador</h2>
                 <h3>Campo Austral S.A.</h3>
-                <h4>Desde <span>2010</span> hasta <span>2016</span></h4>
-                <p>Soporte técnico. Reparación de PCs, notebooks e impresoras. Programación en PHP, .Net, SQL Server y
+                <div class="titulo2">       
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde <span>2010</span> hasta <span>2014</span></h4>
+                </div>
+                    <p>Soporte técnico. Reparación de PCs, notebooks e impresoras. Programación en PHP, .Net, SQL Server y
                     MySql</p>
                 <hr id="divisor">
 
-                <h3>Soporte técnico y Mesa de ayuda</h3>
+                <h2>Soporte técnico y Mesa de ayuda</h2>
                 <h3>Universidad Austral Sede Pilar</h3>
-                <h4>Desde <span>2008</span> hasta <span>2010</span></h4>
-                <p>Soporte técnico. Reparación de PCs, notebooks e imporesoras</p>
-                <hr id="divisor">
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde <span>2008</span> hasta <span>2010</span></h4>
+                </div>
+                <p>Soporte técnico. Reparación de PCs, notebooks e impresoras</p>
+                
 
-                <h3>Vendedor en empresa familiar</h3>
-                <h3>Relojería Joyería Hebert</h3>
-                <h4>Desde <span>2003</span> hasta <span>2007</span></h4>
-                <p>Vendedor en local familiar Relojería</p>
+                
 
 
                 <form action="#header" id="mas_info">
@@ -95,22 +115,33 @@
 
         <section id="estudios" class="estudios">
             <div class="container">
-                <h2>Estudios</h2>
 
-                <h3>Introducción al Desarrollo Front End</h3>
-                <h4>Academia Ticmas (Argentina Programa 4.0)</h4>
-                <p>Actualidad</p>
+                <div class="titulo">
+                    <i class="fa-solid fa-graduation-cap"></i><h2>Estudios</h2>
+                </div>
+
+                <h2>Introducción al Desarrollo Front End</h2>
+                <h3>Academia Ticmas (Argentina Programa 4.0)</h3>
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Actualidad</h4>
+                </div>
+                <p>Introducción a la creación de páginas Web con HTML, CSS3 y JavaScript.</p>
                 <hr id="divisor">
 
-                <h3>Bachiller con orientación en Informática</h3>
-                <h4>Escuela de Educación Media N°7 "Roberto Arlt"</h4>
-                <p>Desde 2000 hasta 2002</p>
-                <hr id="divisor">
+                <h2>Bachiller con orientación en Informática</h2>
+                <h3>Escuela de Educación Media N°7 "Roberto Arlt"</h3>
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde 2000 hasta 2002</h4>
+                </div>
+                <p>Algoritmos. Programación de aplicaciones con C, C++, Pascal. Base de datos. Topología y armado de redes</p>
+                    <hr id="divisor">
 
-                <h3>Curso de Marketing y Ventas</h3>
-                <h4>UBA Sede Pilar</h4>
-                <p>Desde 2015 hasta 2016</p>
-
+                <h2>Curso de Marketing y Ventas</h2>
+                <h3>Universidad de Buenos Aires UBA</h3>
+                <div class="titulo2">
+                    <i class="fa-regular fa-calendar-days"></i><h4>Desde 2015 hasta 2016</h4>
+                </div>
+                <p>Metodologías de ventas. Tipos de marketing. E-Commerce</p>
                 <form action="#header" id="mas_info">
                     <button>Volver al Menú</button>
                 </form>
@@ -118,13 +149,46 @@
         </section>
 
         <section id="conocimientos">
-            <h2>Conocimientos</h2>
+            
+            <div class="titulo">
+                <i class="fa-solid fa-gears"></i><h2>Conocimientos</h2>
+            </div>
             <div class="container">
-                <div class="divisor">
-                    
-                    <div id="img-php"></div>
+                <div class="columnas">
+                <li>
+                    <div class="divisor">
+                        <div id="img-php"></div>
 
-                    <div>
+                        <div>
+                            <div class="barra">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%;">
+                                        <span class="progress-bar-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="divisor">
+                        <div id="img-net"></div>
+
+                        <div class="barra">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%;">
+                                    <span class="progress-bar-text"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="divisor">
+                        <div id="img-mysql"></div>
+
                         <div class="barra">
                             <div class="progress">
                                 <div class="progress-bar" style="width: 90%;">
@@ -133,72 +197,50 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="divisor">
+                <li>
+                    <div class="divisor">
+                        <div id="img-sqlserver"></div>
 
-                    <div id="img-python"></div>
-
-                    <div class="barra">
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 20%;">
-                                <span class="progress-bar-text"></span>
+                        <div class="barra">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%;">
+                                    <span class="progress-bar-text"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="divisor">
+                <li>    
+                    <div class="divisor">
+                        <div id="img-htmlcss"></div>
 
-                    <div id="img-net"></div>
-
-                    <div class="barra">
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%;">
-                                <span class="progress-bar-text"></span>
+                        <div class="barra">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%;">
+                                    <span class="progress-bar-text"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
+                
+                <li>
+                    <div class="divisor">
+                        <div id="img-python"></div>
 
-                <div class="divisor">
-
-                    <div id="img-mysql"></div>
-
-                    <div class="barra">
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 90%;">
-                                <span class="progress-bar-text"></span>
+                        <div class="barra">
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 20%;">
+                                    <span class="progress-bar-text"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="divisor">
-                    <div id="img-sqlserver"></div>
-
-                    <div class="barra">
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%;">
-                                <span class="progress-bar-text"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="divisor">
-                    <div id="img-htmlcss"></div>
-
-                    <div class="barra">
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%;">
-                                <span class="progress-bar-text"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+                </li>
+                </div><!--DIV COLUMNAS-->
             </div>
 
             <form action="#header" id="mas_info">
@@ -231,12 +273,11 @@
                     <span class="form_line"></span>
                 </div>
 
-                <div>
-                    <p>Sino podés comunicarte vía mail:</p>
-                    <a href="mailto:pab_abad@hotmail.com"><i class="fa-solid fa-envelope"></i> pab_abad@hotmail.com</a>
+                <div class="form_contacto">
+                    <p>Sino podés comunicarte vía email:</p>
+                    <a href="mailto:pab_abad@hotmail.com"><i id="iconomail" class="fa-solid fa-envelope"></i> pab_abad@hotmail.com</a>
                 </div>
 
-                <br />
                 <a href="#" type="submit" class="form_submit" value="Enviar">Enviar</a>
                 <a href="#" class="cancelar">Cancelar</a>
             </div>
@@ -248,14 +289,15 @@
 
     <footer>
         <div class="container">
-                <p>&copy Pablo Abad</p>
             
-            <div id="logos_footer">
-                <a href="#" id="iconos"><img id="whatsapp"></a>
-                <a href="#" id="iconos"><img id="facebook"></a>
-                <a href="#" id="iconos"><img id="linkedin"></a>
-                <a href="#" id="iconos"><img id="instagram"></a>
+            <div id="logos">
+                <a href="#" id="iconos"><img id="img-iconow" src="../Files/whatsapp_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/facebook_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/linkedin_logo.png"></a>
+                <a href="#" id="iconos"><img id="img-icono" src="../Files/instagram_logo.png"></a>
             </div>
+            
+            <p>&copy Pablo Abad</p>
         </div>
     </footer>
 
