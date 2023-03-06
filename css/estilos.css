@@ -270,15 +270,15 @@ button:hover {
   background-image: url("../Files/phplogo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 #img-python{
   background-image: url("../Files/python.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 120px;
+  width: 100px;
   height: 100px;
 }
 
@@ -286,8 +286,8 @@ button:hover {
   background-image: url("../Files/netlogo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   padding-left: 10px;
 }
 
@@ -295,15 +295,15 @@ button:hover {
   background-image: url("../Files/mysql-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-size:contain;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 #img-sqlserver{
   background-image: url("../Files/sqlserver.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 120px;
+  width: 100px;
   height: 100px;
 }
 
@@ -311,8 +311,8 @@ button:hover {
   background-image: url("../Files/htmlcss2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 120px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 
