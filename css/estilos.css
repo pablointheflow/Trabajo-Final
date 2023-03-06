@@ -48,6 +48,10 @@ i{
   font-size: 2.2em;
  }
 
+ .main h1{
+  font-size: 8vw;
+ }
+
  .titulo2 i{
   padding-right: .5em;
   font-size: 1.5em;
@@ -90,7 +94,7 @@ body{
 
 /* CONTENEDOR PARA PANTALLAS MUY GRANDES*/
 .container{
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
   padding: 0;
   width: 100%;
@@ -166,8 +170,8 @@ header a:hover{
 
 /* FOTO DE PERFIL */ 
 #perfil {
-  width: 250px;
-  height: 250px;
+  width: 15em;
+  height: 15em;
   background-image: url("../Files/foto_perfil.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -516,6 +520,14 @@ header .container{
   padding: 10%;
  }
 
+ .main h1{
+  font-size: 6vw;
+ }
+
+ #perfil{
+  width: 18em;
+  height: 18em;
+ }
 
  /* ICONOS DE REDES SOCIALES EN HEADER */
  #logos{
@@ -581,6 +593,11 @@ align-items: center;
 
 /* MEDIA QUERY PARA AGREGAR COLUMNAS EN ESTUDIOS */
 @media (min-width:1150px){
+
+  .main h1{
+    font-size: 4vw;
+  }
+
   .columnas{
     column-count: 3;
   }
