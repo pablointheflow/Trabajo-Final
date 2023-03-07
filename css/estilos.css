@@ -90,18 +90,17 @@ body{
   font-family: 'Roboto', sans-serif;
   color:rgb(10,10,10);
   margin:0;
-  width: 100%;
+  width: 100vw;
 }
 
 /* CONTENEDOR PARA PANTALLAS MUY GRANDES*/
 .container{
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
 header{
   background: rgb(10,10,10);
-  width: 100vh;
 
 }
 
@@ -125,7 +124,7 @@ header a{
   padding: 20px;
   color:rgb(255,255,255);
   background: rgb(10,10,10);
-  width: 100vh;
+  width: 100vw;
 }
 
 header a:hover{
@@ -163,7 +162,6 @@ header a:hover{
   flex-direction: column; 
   padding: 0;
   padding-bottom: 0;
-  width: 100vh;
 }
 
 /* FOTO DE PERFIL */ 
@@ -214,6 +212,10 @@ header a:hover{
   width: 100%;
   background: rgb(245,245,245);
   padding-bottom: 10px;
+}
+
+.estudios .container{
+  padding: 0 10px;
 }
 
 /* ESTILOS DE BOTONES INFERIORES*/
@@ -354,7 +356,6 @@ footer .container{
 
 footer{
   background: rgb(210,210,210);
-  width: 100vh;
 }
 
 footer p{
@@ -512,18 +513,6 @@ header .container{
   width: 10%;
   flex-direction: row;
   font-size: 14px;
- }
-
- header{
-  width: 100%;
- }
-
- .main{
-  width: 100%;
- }
-
- footer{
-  width: 100%;
  }
 
  nav a{
