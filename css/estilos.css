@@ -89,6 +89,7 @@ main hr{
   display: none;
 }
 
+/* DEFINO EL BODY*/
 body{
   background: rgba(29, 28, 28, 0.5);
   font-family: 'Roboto', sans-serif;
@@ -101,20 +102,20 @@ body{
 /* CONTENEDOR PARA PANTALLAS MUY GRANDES*/
 .container{
   max-width: 1200px;
-  min-width: 100%;
+  margin: auto;
 }
 
+/* HEADER */ 
 header{
   background: rgb(10,10,10);
-
 }
 
 header .container{
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 header nav{
   display: flex;
@@ -137,7 +138,7 @@ header a:hover{
   color:rgb(255,255,255);
 }
 
-
+/* SECCION BIENVENIDA */ 
 #bienvenida{
   display: flex;
   align-items: center;
@@ -147,7 +148,7 @@ header a:hover{
   height: 90vh;
   width: 100%;
   color:rgb(255,255,255);
-  /* OSCURESCO IMAGEN PARA QUE SOBRESALFA EL TEXTO Y LA CENTRO */
+  /* OSCURESCO IMAGEN PARA QUE SOBRESALGA EL TEXTO Y LA CENTRO */
   background-image:linear-gradient(
     0deg,
     rgba(0,0,0,0.5),
@@ -159,6 +160,7 @@ header a:hover{
 
 }
 
+/* MAIN PRINCIPAL */
 .main{
   display:flex;
   align-items: center;
@@ -195,12 +197,14 @@ header a:hover{
 
 .datos_pers .container{
   padding: 20px;
+  justify-content: space-evenly;
 }
 
 .datos_pers h2{
   text-align: center;  
 }
 
+/* SECCION DATOS LABORALES*/
 #datos_lab{
   width: 100%;
   padding: 10px;
@@ -212,6 +216,8 @@ header a:hover{
   text-align: center;
   padding: 10px;
 }
+
+/* SECCION ESTUDIOS*/
 
 .estudios{
   width: 100%;
@@ -240,7 +246,7 @@ button:hover {
 }
 /* FIN ESTILO BOTON */
 
-
+/* SECCION CONOCIMIENTOS*/
 #conocimientos{
   width: 100%;
   padding: 10px;
@@ -253,7 +259,9 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
 }
 
 /* DIVISOR DE HABILIDADES */
@@ -369,7 +377,9 @@ footer p{
   color: rgb(80,80,80);
 }
 
+/***************************************/
 /* ESTILO FORMULARIO DESPLEGABLE */
+/***************************************/
 
 /* CONTENEDOR */
 .form_container{
@@ -410,7 +420,8 @@ footer p{
 .form_title{
   font-size: 2rem;
   margin-bottom: 0px;   
-  color: #5757577e;
+  color: rgb(100,100,100);
+  padding-top: 10px;
 }
 
 
@@ -418,6 +429,7 @@ footer p{
   margin: auto;
   background: #fff;
   margin: auto;
+  height: 95%;
   width: 90%;
   max-width: 400px;
   padding: 0em 2em;
@@ -504,6 +516,7 @@ footer p{
 }
 /* FIN FORMULARIO DESPLEGABLE */
 
+/******************************************************/
 /* MEDIA QUERY PARA TAMAÑO MINIMO DE PANTALLA 770PX */
 @media (min-width: 770px){
 
@@ -582,7 +595,7 @@ align-items: center;
   width: 20vw;
 }
 
-
+/* SEPARO EN 2 COLUMNAS HASTA 850PX*/
  .columnas{
   column-count: 2;
 }
@@ -591,8 +604,9 @@ align-items: center;
   text-align: left;
  }
 
-} /* FIN MEDIA QUERY MIN 600PX*/
+} /* FIN MEDIA QUERY MIN 770PX*/
 
+/***************************************************/
 /* MEDIA QUERY PARA QUE NO SE ENCIMEN LOS BOTONES CON LOS ICONOS EN HEADER */
 @media (min-width:850px){
 
@@ -607,7 +621,7 @@ align-items: center;
   .main h1{
     font-size: 4vw;
   }
-
+/* SEPARO EN 3 COLUMNAS*/
   .columnas{
     column-count: 3;
   }
