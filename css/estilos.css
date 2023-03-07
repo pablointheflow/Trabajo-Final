@@ -17,6 +17,8 @@
   /* SCROLL DE PAGINA LENTO */
   html{
     scroll-behavior: smooth;
+    min-height: 100%;
+    min-width: 100%;
   }
 
   /* DEFINO TAMAÑO DE FUENTES*/
@@ -99,6 +101,7 @@ body{
 /* CONTENEDOR PARA PANTALLAS MUY GRANDES*/
 .container{
   max-width: 1200px;
+  min-width: 100%;
 }
 
 header{
@@ -264,10 +267,10 @@ button:hover {
 
 
 
-/* BARRA SEPARADORA DE SECCIONES */
+/* PROPIEDADES BARRAS DE PROGRESO */
 .barra{
   padding-left: 20px;
-  width: 40vh;
+  width: 30vw;
 
 }
 
@@ -573,6 +576,10 @@ align-items: center;
 
  #about{
   width:60vh;
+}
+
+.barra{
+  width: 20vw;
 }
 
 
